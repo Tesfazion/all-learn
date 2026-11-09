@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "575776194433",
+    "project_id": "all-learn-cc7ce",
+    "storage_bucket": "all-learn-cc7ce.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575776194433:android:7d94ec3197e1c92beef280",
+        "android_client_info": {
+          "package_name": "com.alllearn.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCIVZcW7pyEpxSWG7BjgfrXS38N1PrN8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

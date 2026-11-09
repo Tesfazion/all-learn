@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ኦል ለርን (All Learn)</string>
+    <string name="app_pitch">ኦል ለርን የመማሪያ እቅድዎን በጊዜ ገደብዎ እና በትርፍ ሰዓቶችዎ ዙሪያ ይገነባል፣ እያንዳንዱን ትምህርት በተረጋገጡ ምንጮች ላይ ያመሰረታል፣ እና እስኪጨርሱ ድረስ በሳምንት ያስካክላል።</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">ዋና ገጽ</string>
+    <string name="nav_courses">ኮርሶች</string>
+    <string name="nav_progress">እድገት</string>
+    <string name="nav_settings">ማስተካከያ</string>
+
+    <!-- Auth -->
+    <string name="sign_in">ግባ</string>
+    <string name="sign_up">ተመዝገብ</string>
+    <string name="create_account">መለያ ፍጠር</string>
+    <string name="email">ኢሜይል</string>
+    <string name="password">የይለፍ ቃል</string>
+    <string name="confirm_password">የይለፍ ቃል አረጋግጥ</string>
+    <string name="forgot_password">የይለፍ ቃል ረሱ?</string>
+    <string name="forgot_password_title">የይለፍ ቃል ቀይር</string>
+    <string name="forgot_password_desc">ኢሜይልዎን ያስገቡ፤ የማደሻ ሊንክ እንልክልዎታለን።</string>
+    <string name="send_reset_link">የማደሻ ሊንክ ላክ</string>
+    <string name="reset_link_sent_msg">ይህ ኢሜይል አካውንት ካለው የማደሻ ሊንክ ተልኳል።</string>
+    <string name="auth_error_invalid_credentials">ትክክል ያልሆነ ኢሜይል ወይም የይለፍ ቃል</string>
+    <string name="pwd_rule_length">ቢያንስ 8 ቁምፊዎች</string>
+    <string name="pwd_rule_letter">ቢያንስ አንድ ፊደል</string>
+    <string name="pwd_rule_number">ቢያንስ አንድ ቁጥር</string>
+    <string name="pwd_rule_match">የይለፍ ቃሎች ይመሳሰላሉ</string>
+    <string name="already_have_account">አካውንት አለዎት? ይግቡ</string>
+    <string name="dont_have_account">አካውንት የለዎትም? ይመዝገቡ</string>
+    <string name="sign_out">ውጣ</string>
+
+    <!-- Account Setup -->
+    <string name="setup_heard_title">ስለ እኛ እንዴት ሰሙ?</string>
+    <string name="setup_heard_subtitle">ተማሪዎች ኦል ለርንን እንዴት እንደሚያገኙት ለመረዳት ይረዱናል</string>
+    <string name="setup_theme_title">የመተግበሪያውን ቀለም ይምረጡ</string>
+    <string name="setup_theme_subtitle">የመማር ልምድዎን ያበጁ</string>
+    <string name="heard_friend">ከጓደኛ ወይም ከቤተሰብ</string>
+    <string name="heard_social">ማህበራዊ ሚዲያ (ፌስቡክ፣ ቲክቶክ፣ ቴሌግራም፣ ዩቲዩብ)</string>
+    <string name="heard_search">የፍለጋ ሞተር</string>
+    <string name="heard_school">ትምህርት ቤት ወይም ዩኒቨርሲቲ</string>
+    <string name="heard_other">ሌላ</string>
+    <string name="continue_btn">ቀጥል</string>
+    <string name="skip_btn">እለፍ</string>
+
+    <!-- Onboarding / Course Creation -->
+    <string name="select_area_title">ምን መስክ መማር ይፈልጋሉ?</string>
+    <string name="select_topic_title">የትኛውን ርዕስ ማወቅ ይፈልጋሉ?</string>
+    <string name="skill_level_title">የአሁኑ የክህሎት ደረጃዎ ምንድነው?</string>
+    <string name="deadline_title">የዒላማ ማጠናቀቂያ ጊዜዎ መቼ ነው?</string>
+    <string name="weekly_hours_title">በሳምንት ስንት ሰዓት ማናት ይችላሉ?</string>
+
+    <string name="beginner">ጀማሪ</string>
+    <string name="beginner_desc">ምንም ወይም አነስተኛ የቅድሚያ ልምድ</string>
+    <string name="intermediate">መካከለኛ</string>
+    <string name="intermediate_desc">መሰረታዊ ግንዛቤ አለኝ፣ ማሳደግ እፈልጋለሁ</string>
+    <string name="advanced">ከፍተኛ</string>
+    <string name="advanced_desc">ጠንካራ ልምድ አለኝ፣ ወደ ላቀ ደረጃ መድረስ እፈልጋለሁ</string>
+    <string name="level_note_label">ቀደም ብለው የሚያውቁት ነገር አለ? (አማራጭ)</string>
+
+    <string name="other_specify">ሌላ (የራስዎን ይፃፉ)</string>
+    <string name="custom_topic_prompt">የራስዎን ርዕስ ያስገቡ:</string>
+    <string name="invalid_topic_msg">ርዕሱ በ2 እና 60 ቁምፊዎች መካከል መሆን አለበት።</string>
+
+    <string name="duration_1m">1 ወር</string>
+    <string name="duration_2m">2 ወራት</string>
+    <string name="duration_3m">3 ወራት</string>
+    <string name="duration_6m">6 ወራት</string>
+    <string name="duration_custom">የተበጀ</string>
+    <string name="weeks_count">%1$d ሳምንታት</string>
+    <string name="target_date_summary">የታለመ የማጠናቀቂያ ቀን: %1$s</string>
+
+    <string name="hours_per_week_suffix">%1$d ሰዓታት / በሳምንት</string>
+    <string name="custom_hours_label">በሳምንት የጥናት ሰዓት (1 - 40):</string>
+    <string name="study_days_label">የተመረጡ የጥናት ቀናት:</string>
+    <string name="summary_total_hours">አጠቃላይ የተገመተ የጥናት ጊዜ: ~%1$d ሰዓታት እስከ %2$s.</string>
+    <string name="low_hours_warning">ማስጠንቀቂያ: ጥናት ሰዓቱ ለርዕሱ አነስተኛ ሊሆን ይችላል።</string>
+
+    <!-- Outline Preview -->
+    <string name="building_plan_title">የግል የጥናት እቅድዎን በመገንባት ላይ...</string>
+    <string name="building_plan_sub">ኤአይ አርክቴክቱ ትምህርቶችን ለጊዜ ገደብዎ እያዘጋጀ ነው</string>
+    <string name="outline_preview_title">የኮርስ ዝርዝር ቅድመ እይታ</string>
+    <string name="approve_and_start">አጽድቅ እና ጀምር</string>
+    <string name="regenerate_outline">እቅዱን እንደገና አዘጋጅ</string>
+    <string name="regenerate_prompt_label">በዚህ እቅድ ላይ ምን እንዲቀየር ይፈልጋሉ?</string>
+    <string name="regenerate_prompt_hint">ምሳሌ: ቲዎሪ ቀንስ፣ ፕሮጀክት ጨምር...</string>
+    <string name="regen_limit_reached">በነጻ እቅድ ላይ የተፈቀደውን ከፍተኛ እንደገና ማዘጋጀት ጨርሰዋል።</string>
+
+    <!-- Course & Lessons -->
+    <string name="current_course">የአሁኑ ኮርስ</string>
+    <string name="no_active_course">በአሁኑ ጊዜ ንቁ ኮርስ የለም</string>
+    <string name="start_new_course">አዲስ ኮርስ ጀምር</string>
+    <string name="week_n">ሳምንት %1$d</string>
+    <string name="phase_n">ምዕራፍ %1$d: %2$s</string>
+    <string name="goal_label">ግብ: %1$s</string>
+    <string name="milestone_project_label">ዋና ፕሮጀክት: %1$s</string>
+    <string name="sources_title">የተረጋገጡ ምንጮች</string>
+    <string name="mark_as_done">ተጠናቋል ብለህ መዝግብ</string>
+    <string name="completed">ተጠናቋል</string>
+    <string name="in_progress">በሂደት ላይ</string>
+    <string name="not_started">ልልተጀመረም</string>
+    <string name="report_mistake">ስህተት ሪፖርት አድርግ</string>
+    <string name="report_mistake_title">የይዘት ስህተት ሪፖርት አድርግ</string>
+    <string name="report_mistake_desc">በዚህ ትምህርት ላይ ስህተት አግኝተዋል? ያሳውቁን:</string>
+    <string name="report_submitted">እናመሰግናለን! የስህተት ሪፖርትዎ ተልኳል።</string>
+    <string name="non_programming_notice">በኤአይ የተፈጠረ ይዘት። አስፈላጊ መረጃዎችን በተዘረዘሩት ምንጮች ያረጋግጡ።</string>
+    <string name="needs_review_badge">የምንጭ ማረጋገጫ ያስፈልገዋል</string>
+
+    <!-- Quiz -->
+    <string name="quiz_title">የትምህርት ፈተና</string>
+    <string name="submit_quiz">መልሶችን አስገባ</string>
+    <string name="quiz_score_msg">ውጤትዎ: %1$d / %2$d (%3$d%%)</string>
+    <string name="explanation_title">ማብራሪያ:</string>
+    <string name="correct">ትክክል!</string>
+    <string name="incorrect">ስህተት</string>
+
+    <!-- Weekly Check-in & Plan Adjustment -->
+    <string name="checkin_title">ሳምንታዊ ግምገማ</string>
+    <string name="checkin_question">የሳምንት %1$d የጥናት ሰዓትዎን ጨርሰዋል?</string>
+    <string name="completion_rate_msg">በዚህ ሳምንት %1$d%% የጥናት ጊዜ አጠናቀዋል።</string>
+    <string name="adjust_choice_compress">እቅዱን ማሳጠር (የማጠናቀቂያ ቀኑን ሳይቀይሩ ዝቅተኛ ቅድመ-አስፈላጊ ትምህርቶችን ማቀናጀት)</string>
+    <string name="adjust_choice_extend">ቀኑን ማራዘም (የማጠናቀቂያ ቀኑን ወደ ኋላ ማራዘም)</string>
+    <string name="apply_adjustment">የጥናት እቅዱን አዘምን</string>
+
+    <!-- Helper Bot -->
+    <string name="helper_bot_title">24/7 ኤአይ ረዳት ቦት</string>
+    <string name="helper_bot_disclaimer">የቦት መልሶች በኮርስዎ ይዘት እና ምንጮች ላይ የተመሰረቱ ናቸው።</string>
+    <string name="bot_messages_remaining">ዛሬ %1$d ነጻ መልእክቶች ቀርተዋል</string>
+    <string name="type_message_hint">ስለዚህ ትምህርት ጥያቄ ጠይቅ...</string>
+    <string name="bot_daily_limit_reached">ለዛሬ የተፈቀደውን የነጻ መልእክት ገደብ ጨርሰዋል።</string>
+
+    <!-- Progress & Dashboard -->
+    <string name="streak_days">%1$d ቀን ተከታታይ!</string>
+    <string name="hours_studied_this_week">በዚህ ሳምንት %1$d / %2$d ሰዓታት ተጠናዋል</string>
+    <string name="quiz_avg_score">የፈተናዎች አማካኝ: %1$d%%</string>
+    <string name="lessons_done_count">%1$d ከ %2$d ትምህርቶች ተጠናቀዋል</string>
+
+    <!-- Settings & Paywall -->
+    <string name="settings_title">ማስተካከያ</string>
+    <string name="dark_mode">ጨለማ ሁነታ (Dark Mode)</string>
+    <string name="accent_color">የመተግበሪያ ቀለም</string>
+    <string name="reminder_settings">የጥናት ማስታወሻዎች</string>
+    <string name="reminder_time">የማስታወሻ ሰዓት</string>
+    <string name="privacy_policy">የግላዊነት ፖሊሲ</string>
+    <string name="delete_account">አካውንት እና መረጃዎችን አጥፋ</string>
+
+    <string name="upgrade_pro">ወደ ፕሮ ያድጉ</string>
+    <string name="free_plan">ነጻ እቅድ</string>
+    <string name="pro_plan">ፕሮ እቅድ</string>
+    <string name="pro_feature_1">ያልተገደበ ንቁ ኮርሶች</string>
+    <string name="pro_feature_2">ያልተገደበ የኮርስ እቅድ እንደገና ማዘጋጀት</string>
+    <string name="pro_feature_3">ያልተገደበ ኤአይ ረዳት ቦት መልእክቶች</string>
+    <string name="pro_feature_4">ይፋዊ የማጠናቀቂያ ሰርተፊኬቶች</string>
+    <string name="pro_feature_5">ትምህርቶችን አውርዶ ያለ ኢንተርኔት ማንበብ</string>
+
+    <!-- Common -->
+    <string name="cancel">ሰርዝ</string>
+    <string name="retry">ድጋሚ ሞክር</string>
+    <string name="error_generic">ያልተጠበቀ ስህተት ተከሰተ። እባክዎ ድጋሚ ይሞክሩ።</string>
+    <string name="error_no_connection">የኢንተርኔት ግንኙነት የለም። ቀደም ሲል የወረዱ ትምህርቶች ይገኛሉ።</string>
+
+    <!-- Days -->
+    <string name="day_mon">ሰኞ</string>
+    <string name="day_tue">ማክሰኞ</string>
+    <string name="day_wed">ረቡዕ</string>
+    <string name="day_thu">ሐሙስ</string>
+    <string name="day_fri">አርብ</string>
+    <string name="day_sat">ቅዳሜ</string>
+    <string name="day_sun">እሁድ</string>
+</resources>

@@ -1,0 +1,81 @@
+com.alllearn.app-res-0 C:\Protected File\Real Project\All Learn\app\build\generated\res\processDebugGoogleServices
+com.alllearn.app-resValues-1 C:\Protected File\Real Project\All Learn\app\build\generated\res\resValues\debug
+com.alllearn.app-packageDebugResources-2 C:\Protected File\Real Project\All Learn\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.alllearn.app-packageDebugResources-3 C:\Protected File\Real Project\All Learn\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.alllearn.app-debug-4 C:\Protected File\Real Project\All Learn\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.alllearn.app-debug-5 C:\Protected File\Real Project\All Learn\app\src\debug\res
+com.alllearn.app-main-6 C:\Protected File\Real Project\All Learn\app\src\main\res
+com.alllearn.app-lifecycle-livedata-core-2.8.7-7 C:\Users\tesfa\.gradle\caches\8.9\transforms\04bb106014a6b6d1b72c0cd2390a5955\transformed\lifecycle-livedata-core-2.8.7\res
+com.alllearn.app-core-runtime-2.2.0-8 C:\Users\tesfa\.gradle\caches\8.9\transforms\06d5e2bfd6b2a8248bc71c14ce241bc0\transformed\core-runtime-2.2.0\res
+com.alllearn.app-material3-release-9 C:\Users\tesfa\.gradle\caches\8.9\transforms\079b5249e3dbe868a1f1bd4485bd75c5\transformed\material3-release\res
+com.alllearn.app-ui-util-release-10 C:\Users\tesfa\.gradle\caches\8.9\transforms\09d489a63c92d3a79de3e6bea8e3a165\transformed\ui-util-release\res
+com.alllearn.app-ads-adservices-1.0.0-beta05-11 C:\Users\tesfa\.gradle\caches\8.9\transforms\09f8fa24317d006213eac71162201769\transformed\ads-adservices-1.0.0-beta05\res
+com.alllearn.app-material-release-12 C:\Users\tesfa\.gradle\caches\8.9\transforms\0c22b6bead7c1b0ffe9590b7f88160b3\transformed\material-release\res
+com.alllearn.app-lifecycle-process-2.8.7-13 C:\Users\tesfa\.gradle\caches\8.9\transforms\0c7217764f745a5ce1d352ea3906089b\transformed\lifecycle-process-2.8.7\res
+com.alllearn.app-play-services-basement-18.4.0-14 C:\Users\tesfa\.gradle\caches\8.9\transforms\0e4c26e3efe1f75d12be952eae2fcc34\transformed\play-services-basement-18.4.0\res
+com.alllearn.app-navigation-common-ktx-2.8.4-15 C:\Users\tesfa\.gradle\caches\8.9\transforms\0e606a3640b27727dcf2fc1741121e61\transformed\navigation-common-ktx-2.8.4\res
+com.alllearn.app-runtime-saveable-release-16 C:\Users\tesfa\.gradle\caches\8.9\transforms\1150d9b9d9cea728a62f557b55a0819e\transformed\runtime-saveable-release\res
+com.alllearn.app-ads-adservices-java-1.0.0-beta05-17 C:\Users\tesfa\.gradle\caches\8.9\transforms\12e94bbe43a84237c5ac056c524ce66b\transformed\ads-adservices-java-1.0.0-beta05\res
+com.alllearn.app-work-runtime-2.10.0-18 C:\Users\tesfa\.gradle\caches\8.9\transforms\164872312273c7f9a1817b7c9da53681\transformed\work-runtime-2.10.0\res
+com.alllearn.app-core-1.15.0-19 C:\Users\tesfa\.gradle\caches\8.9\transforms\19626c65588f31e5c0630e132afa1643\transformed\core-1.15.0\res
+com.alllearn.app-navigation-common-2.8.4-20 C:\Users\tesfa\.gradle\caches\8.9\transforms\1ac0834daf37cc1e38ce63b418025d0c\transformed\navigation-common-2.8.4\res
+com.alllearn.app-credentials-play-services-auth-1.2.0-rc01-21 C:\Users\tesfa\.gradle\caches\8.9\transforms\1ae29958089a84aa05cea123cd8e58fa\transformed\credentials-play-services-auth-1.2.0-rc01\res
+com.alllearn.app-ui-release-22 C:\Users\tesfa\.gradle\caches\8.9\transforms\1ee76e2d3ab5ad984db538c9a89d60d9\transformed\ui-release\res
+com.alllearn.app-material-icons-extended-release-23 C:\Users\tesfa\.gradle\caches\8.9\transforms\2149e4d185e1b751e43395da79856a04\transformed\material-icons-extended-release\res
+com.alllearn.app-ui-unit-release-24 C:\Users\tesfa\.gradle\caches\8.9\transforms\21d50418b7d5e4fadadd707f28940fe8\transformed\ui-unit-release\res
+com.alllearn.app-sqlite-framework-2.4.0-25 C:\Users\tesfa\.gradle\caches\8.9\transforms\21d7b50d0060f768b753dafd558849af\transformed\sqlite-framework-2.4.0\res
+com.alllearn.app-activity-ktx-1.9.3-26 C:\Users\tesfa\.gradle\caches\8.9\transforms\26609bbd6c867de182b907525a939a93\transformed\activity-ktx-1.9.3\res
+com.alllearn.app-graphics-path-1.0.1-27 C:\Users\tesfa\.gradle\caches\8.9\transforms\26b46bf4c581ba6e433e32b8384585e1\transformed\graphics-path-1.0.1\res
+com.alllearn.app-ui-tooling-release-28 C:\Users\tesfa\.gradle\caches\8.9\transforms\298d9b7e5987d0a207eabaeb71581804\transformed\ui-tooling-release\res
+com.alllearn.app-play-services-auth-20.7.0-29 C:\Users\tesfa\.gradle\caches\8.9\transforms\31834fe1ce179ca79c6f252efacb6c03\transformed\play-services-auth-20.7.0\res
+com.alllearn.app-lifecycle-viewmodel-ktx-2.8.7-30 C:\Users\tesfa\.gradle\caches\8.9\transforms\3e0a34d630467760405c2a0ea8037906\transformed\lifecycle-viewmodel-ktx-2.8.7\res
+com.alllearn.app-play-services-base-18.0.1-31 C:\Users\tesfa\.gradle\caches\8.9\transforms\4465cd44b118f5b7b66f3acbe0c1b2d5\transformed\play-services-base-18.0.1\res
+com.alllearn.app-ui-graphics-release-32 C:\Users\tesfa\.gradle\caches\8.9\transforms\4662837ae7797f5cf15a2ac98711f877\transformed\ui-graphics-release\res
+com.alllearn.app-tracing-ktx-1.2.0-33 C:\Users\tesfa\.gradle\caches\8.9\transforms\4672ff3cf473136f936b18b7358dfdd8\transformed\tracing-ktx-1.2.0\res
+com.alllearn.app-firebase-common-21.0.0-34 C:\Users\tesfa\.gradle\caches\8.9\transforms\47063f9b452520e88561ef20b246861e\transformed\firebase-common-21.0.0\res
+com.alllearn.app-annotation-experimental-1.4.1-35 C:\Users\tesfa\.gradle\caches\8.9\transforms\4a3866e56739fab873d58829dd8c410e\transformed\annotation-experimental-1.4.1\res
+com.alllearn.app-navigation-runtime-ktx-2.8.4-36 C:\Users\tesfa\.gradle\caches\8.9\transforms\4fe4f3cf172914ea8ae393ce025ba473\transformed\navigation-runtime-ktx-2.8.4\res
+com.alllearn.app-savedstate-1.2.1-37 C:\Users\tesfa\.gradle\caches\8.9\transforms\53502688f0cda668abfe6cb7587740da\transformed\savedstate-1.2.1\res
+com.alllearn.app-savedstate-ktx-1.2.1-38 C:\Users\tesfa\.gradle\caches\8.9\transforms\573bdb12af29ad06a81d049d7dbb2c4e\transformed\savedstate-ktx-1.2.1\res
+com.alllearn.app-animation-release-39 C:\Users\tesfa\.gradle\caches\8.9\transforms\58bc5187be20727385c763f73de2c27b\transformed\animation-release\res
+com.alllearn.app-foundation-release-40 C:\Users\tesfa\.gradle\caches\8.9\transforms\5e8b4a2c5962a086de937bbc1d98b357\transformed\foundation-release\res
+com.alllearn.app-datastore-core-release-41 C:\Users\tesfa\.gradle\caches\8.9\transforms\62853518888adcac52c6334d18357112\transformed\datastore-core-release\res
+com.alllearn.app-ui-tooling-data-release-42 C:\Users\tesfa\.gradle\caches\8.9\transforms\63ee09ad72c64bc02f91cf10fc098910\transformed\ui-tooling-data-release\res
+com.alllearn.app-activity-compose-1.9.3-43 C:\Users\tesfa\.gradle\caches\8.9\transforms\69b0cd85b7d2bbd970e74210c1ca1afb\transformed\activity-compose-1.9.3\res
+com.alllearn.app-foundation-layout-release-44 C:\Users\tesfa\.gradle\caches\8.9\transforms\6e202de493feed282acce3db073c7247\transformed\foundation-layout-release\res
+com.alllearn.app-runtime-release-45 C:\Users\tesfa\.gradle\caches\8.9\transforms\73e85f81c455228fa61926a857a18d36\transformed\runtime-release\res
+com.alllearn.app-core-ktx-1.15.0-46 C:\Users\tesfa\.gradle\caches\8.9\transforms\756f6d6440ab42603e6713b57ea74890\transformed\core-ktx-1.15.0\res
+com.alllearn.app-lifecycle-livedata-core-ktx-2.8.7-47 C:\Users\tesfa\.gradle\caches\8.9\transforms\762b72e0edefeb61f2f64be3b4007c32\transformed\lifecycle-livedata-core-ktx-2.8.7\res
+com.alllearn.app-browser-1.4.0-48 C:\Users\tesfa\.gradle\caches\8.9\transforms\77e7ac493dc88127703f11b2241bb226\transformed\browser-1.4.0\res
+com.alllearn.app-firebase-crashlytics-19.0.3-49 C:\Users\tesfa\.gradle\caches\8.9\transforms\80802aa99e955f0eba5a57a4b3d13541\transformed\firebase-crashlytics-19.0.3\res
+com.alllearn.app-navigation-compose-2.8.4-50 C:\Users\tesfa\.gradle\caches\8.9\transforms\8ae272b540d55eeaa843c84a3d5a3367\transformed\navigation-compose-2.8.4\res
+com.alllearn.app-credentials-1.2.0-rc01-51 C:\Users\tesfa\.gradle\caches\8.9\transforms\9178b17218fadb1ad7c608013cce4fc3\transformed\credentials-1.2.0-rc01\res
+com.alllearn.app-room-runtime-2.6.1-52 C:\Users\tesfa\.gradle\caches\8.9\transforms\920d91fa43f80fc00f9e1f71e0abc513\transformed\room-runtime-2.6.1\res
+com.alllearn.app-ui-tooling-preview-release-53 C:\Users\tesfa\.gradle\caches\8.9\transforms\937f912c47663b8648245fdcbe76b129\transformed\ui-tooling-preview-release\res
+com.alllearn.app-work-runtime-ktx-2.10.0-54 C:\Users\tesfa\.gradle\caches\8.9\transforms\953bd2139eff69b8927842735c0a1601\transformed\work-runtime-ktx-2.10.0\res
+com.alllearn.app-room-ktx-2.6.1-55 C:\Users\tesfa\.gradle\caches\8.9\transforms\95e09fa03196b1b4124f766522e298f0\transformed\room-ktx-2.6.1\res
+com.alllearn.app-tracing-1.2.0-56 C:\Users\tesfa\.gradle\caches\8.9\transforms\9d460c04d9cc252b70440b80f028f2e2\transformed\tracing-1.2.0\res
+com.alllearn.app-animation-core-release-57 C:\Users\tesfa\.gradle\caches\8.9\transforms\a205a5a5e6b89917bc53b7a34eb909a7\transformed\animation-core-release\res
+com.alllearn.app-lifecycle-runtime-release-58 C:\Users\tesfa\.gradle\caches\8.9\transforms\a25a903bb761c6a8ff2e79f32fcd2c3a\transformed\lifecycle-runtime-release\res
+com.alllearn.app-lifecycle-runtime-compose-release-59 C:\Users\tesfa\.gradle\caches\8.9\transforms\ad5cbf6b6236bf2d175f9d3d5ebe416a\transformed\lifecycle-runtime-compose-release\res
+com.alllearn.app-navigation-runtime-2.8.4-60 C:\Users\tesfa\.gradle\caches\8.9\transforms\aea1768a9655258eb08277975ce53436\transformed\navigation-runtime-2.8.4\res
+com.alllearn.app-emoji2-1.3.0-61 C:\Users\tesfa\.gradle\caches\8.9\transforms\aec4f540113cae9e1e9b983108fd8ffa\transformed\emoji2-1.3.0\res
+com.alllearn.app-activity-1.9.3-62 C:\Users\tesfa\.gradle\caches\8.9\transforms\b259e782b6ac6542b2e373c6f8ca4251\transformed\activity-1.9.3\res
+com.alllearn.app-material-ripple-release-63 C:\Users\tesfa\.gradle\caches\8.9\transforms\b9fb91d9c551a2b5ada746b5e48fb3be\transformed\material-ripple-release\res
+com.alllearn.app-lifecycle-service-2.8.7-64 C:\Users\tesfa\.gradle\caches\8.9\transforms\bc88b798dc972ec0599901ba3c60a8ca\transformed\lifecycle-service-2.8.7\res
+com.alllearn.app-ui-test-manifest-1.7.5-65 C:\Users\tesfa\.gradle\caches\8.9\transforms\bdd81c8d303e21340ab6d1381a4e1621\transformed\ui-test-manifest-1.7.5\res
+com.alllearn.app-lifecycle-livedata-2.8.7-66 C:\Users\tesfa\.gradle\caches\8.9\transforms\be5db5d30072ef4616640b3c3e87c4ef\transformed\lifecycle-livedata-2.8.7\res
+com.alllearn.app-customview-poolingcontainer-1.0.0-67 C:\Users\tesfa\.gradle\caches\8.9\transforms\c00d25bef149145c9fffa97f7939e6ca\transformed\customview-poolingcontainer-1.0.0\res
+com.alllearn.app-sqlite-2.4.0-68 C:\Users\tesfa\.gradle\caches\8.9\transforms\c51d4bd67a15e09b862577b89f032696\transformed\sqlite-2.4.0\res
+com.alllearn.app-lifecycle-viewmodel-savedstate-2.8.7-69 C:\Users\tesfa\.gradle\caches\8.9\transforms\c91e14399329220a88dc0ecdb16f9158\transformed\lifecycle-viewmodel-savedstate-2.8.7\res
+com.alllearn.app-play-services-measurement-api-22.1.0-70 C:\Users\tesfa\.gradle\caches\8.9\transforms\da40a6c6e0c6f6566dcf9227dc57691b\transformed\play-services-measurement-api-22.1.0\res
+com.alllearn.app-lifecycle-runtime-ktx-release-71 C:\Users\tesfa\.gradle\caches\8.9\transforms\ddb4bf17e8a3c28c4c690f70a20ad005\transformed\lifecycle-runtime-ktx-release\res
+com.alllearn.app-lifecycle-viewmodel-release-72 C:\Users\tesfa\.gradle\caches\8.9\transforms\df8540c009df557b588e8433649dadf3\transformed\lifecycle-viewmodel-release\res
+com.alllearn.app-profileinstaller-1.3.1-73 C:\Users\tesfa\.gradle\caches\8.9\transforms\e0f80afe10fb46f9b8f6b03efcba6359\transformed\profileinstaller-1.3.1\res
+com.alllearn.app-startup-runtime-1.1.1-74 C:\Users\tesfa\.gradle\caches\8.9\transforms\e524fa189f5d28d85924615377eb660a\transformed\startup-runtime-1.1.1\res
+com.alllearn.app-ui-geometry-release-75 C:\Users\tesfa\.gradle\caches\8.9\transforms\f1e87c3209997ed4b964c96b4f5504c8\transformed\ui-geometry-release\res
+com.alllearn.app-ui-text-release-76 C:\Users\tesfa\.gradle\caches\8.9\transforms\f3cf6401568340f6bb65c711d8f30fa6\transformed\ui-text-release\res
+com.alllearn.app-datastore-release-77 C:\Users\tesfa\.gradle\caches\8.9\transforms\f69ec0c23568018ad93532ce7582bce3\transformed\datastore-release\res
+com.alllearn.app-datastore-preferences-release-78 C:\Users\tesfa\.gradle\caches\8.9\transforms\f8aa28561ec8678a57f66bd336c242d8\transformed\datastore-preferences-release\res
+com.alllearn.app-lifecycle-viewmodel-compose-release-79 C:\Users\tesfa\.gradle\caches\8.9\transforms\fe844e3b46cfdbd45eb7c8e7a7565368\transformed\lifecycle-viewmodel-compose-release\res
+com.alllearn.app-material-icons-core-release-80 C:\Users\tesfa\.gradle\caches\8.9\transforms\ffe224c814e64eacfb2642bf7a11a209\transformed\material-icons-core-release\res

@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">All Learn</string>
+    <string name="app_pitch">All Learn builds a learning plan around your deadline and free hours, grounds every lesson in trusted sources, and adapts weekly to keep you on track until you finish.</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_courses">Courses</string>
+    <string name="nav_progress">Progress</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Auth -->
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create_account">Create Account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password_title">Reset Password</string>
+    <string name="forgot_password_desc">Enter your email address and we will send you a reset link.</string>
+    <string name="send_reset_link">Send Reset Link</string>
+    <string name="reset_link_sent_msg">If this email has an account, a reset link was sent.</string>
+    <string name="auth_error_invalid_credentials">Invalid email or password.</string>
+    <string name="pwd_rule_length">At least 8 characters</string>
+    <string name="pwd_rule_letter">At least one letter</string>
+    <string name="pwd_rule_number">At least one number</string>
+    <string name="pwd_rule_match">Passwords match</string>
+    <string name="already_have_account">Already have an account? Sign In</string>
+    <string name="dont_have_account">Don\u0027t have an account? Sign Up</string>
+    <string name="sign_out">Sign Out</string>
+
+    <!-- Account Setup -->
+    <string name="setup_heard_title">How did you hear about us?</string>
+    <string name="setup_heard_subtitle">Help us understand how learners find All Learn</string>
+    <string name="setup_theme_title">Choose your theme accent</string>
+    <string name="setup_theme_subtitle">Personalize your learning experience</string>
+    <string name="heard_friend">Friend or family</string>
+    <string name="heard_social">Social media (Facebook, TikTok, Instagram, YouTube, Telegram)</string>
+    <string name="heard_search">Search engine</string>
+    <string name="heard_school">School or university</string>
+    <string name="heard_other">Other</string>
+    <string name="continue_btn">Continue</string>
+    <string name="skip_btn">Skip</string>
+
+    <!-- Onboarding / Course Creation -->
+    <string name="select_area_title">What area do you want to learn?</string>
+    <string name="select_topic_title">What specific topic do you want to master?</string>
+    <string name="skill_level_title">What is your current skill level?</string>
+    <string name="deadline_title">When is your target deadline?</string>
+
+    <string name="weekly_hours_title">How many hours per week can you study?</string>
+
+    <string name="beginner">Beginner</string>
+    <string name="beginner_desc">Little to no previous experience</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="intermediate_desc">Basic understanding, looking to expand</string>
+    <string name="advanced">Advanced</string>
+    <string name="advanced_desc">Solid experience, aiming for mastery</string>
+    <string name="level_note_label">What do you already know? (Optional, max 200 chars)</string>
+
+    <string name="other_specify">Other (type your own)</string>
+    <string name="custom_topic_prompt">Type your custom topic or subject:</string>
+    <string name="invalid_topic_msg">Topic must be between 2 and 60 characters and suitable for learning.</string>
+
+    <string name="duration_1m">1 Month</string>
+    <string name="duration_2m">2 Months</string>
+    <string name="duration_3m">3 Months</string>
+    <string name="duration_6m">6 Months</string>
+    <string name="duration_custom">Custom</string>
+    <string name="weeks_count">%1$d Weeks</string>
+    <string name="target_date_summary">Target Completion Date: %1$s</string>
+
+    <string name="hours_per_week_suffix">%1$d hours / week</string>
+    <string name="custom_hours_label">Custom Weekly Hours (1 - 40):</string>
+    <string name="study_days_label">Preferred Study Days:</string>
+    <string name="summary_total_hours">Total estimated study time: ~%1$d hours until %2$s.</string>
+    <string name="low_hours_warning">Warning: The total hours may be tight for this topic. Consider increasing weekly hours or deadline for best results.</string>
+
+    <!-- Outline Preview -->
+    <string name="building_plan_title">Building your personalized plan...</string>
+    <string name="building_plan_sub">AI Architect is tailoring lessons to your deadline &amp; hours</string>
+    <string name="outline_preview_title">Course Outline Preview</string>
+    <string name="approve_and_start">Approve and Start</string>
+    <string name="regenerate_outline">Regenerate Outline</string>
+    <string name="regenerate_prompt_label">What should change in this outline?</string>
+    <string name="regenerate_prompt_hint">e.g. Less theory, more practical projects...</string>
+    <string name="regen_limit_reached">You have reached the maximum regenerations allowed on the Free plan.</string>
+
+    <!-- Course & Lessons -->
+    <string name="current_course">Current Course</string>
+    <string name="no_active_course">No active course right now</string>
+    <string name="start_new_course">Start a New Course</string>
+    <string name="week_n">Week %1$d</string>
+    <string name="phase_n">Phase %1$d: %2$s</string>
+    <string name="goal_label">Goal: %1$s</string>
+    <string name="milestone_project_label">Milestone Project: %1$s</string>
+    <string name="sources_title">Sources &amp; Trusted References</string>
+    <string name="mark_as_done">Mark as Completed</string>
+    <string name="completed">Completed</string>
+    <string name="in_progress">In Progress</string>
+    <string name="not_started">Not Started</string>
+    <string name="report_mistake">Report a Mistake</string>
+    <string name="report_mistake_title">Report Content Mistake</string>
+    <string name="report_mistake_desc">Found an error or contradiction in this lesson? Let us know:</string>
+    <string name="report_submitted">Thank you! Your mistake report has been submitted.</string>
+    <string name="non_programming_notice">AI-generated content. Verify important information with listed trusted sources.</string>
+    <string name="needs_review_badge">Needs Source Verification</string>
+
+    <!-- Quiz -->
+    <string name="quiz_title">Lesson Quiz</string>
+    <string name="submit_quiz">Submit Answers</string>
+    <string name="quiz_score_msg">Your Score: %1$d / %2$d (%3$d%%)</string>
+    <string name="explanation_title">Explanation:</string>
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Incorrect</string>
+
+    <!-- Weekly Check-in & Plan Adjustment -->
+    <string name="checkin_title">Weekly Check-in</string>
+    <string name="checkin_question">Did you finish your planned hours for Week %1$d?</string>
+    <string name="completion_rate_msg">You completed %1$d%% of planned study time this week.</string>
+    <string name="adjust_choice_compress">Compress Plan (Keep deadline, trim/streamline lower priority lessons)</string>
+    <string name="adjust_choice_extend">Extend Deadline (Move deadline back by missed weeks, keep full depth)</string>
+    <string name="apply_adjustment">Update Learning Plan</string>
+
+    <!-- Helper Bot -->
+    <string name="helper_bot_title">24/7 AI Helper Bot</string>
+    <string name="helper_bot_disclaimer">All Learn Helper Bot answers based on your current course context and sources. Always verify critical facts.</string>
+    <string name="bot_messages_remaining">%1$d free messages remaining today</string>
+    <string name="type_message_hint">Ask a question about this lesson...</string>
+    <string name="bot_daily_limit_reached">You have reached your daily message limit for the Free plan.</string>
+
+    <!-- Progress & Dashboard -->
+    <string name="streak_days">%1$d Day Streak!</string>
+    <string name="hours_studied_this_week">%1$d / %2$d hours studied this week</string>
+    <string name="quiz_avg_score">Quiz Average: %1$d%%</string>
+    <string name="lessons_done_count">%1$d of %2$d lessons completed</string>
+
+    <!-- Settings & Paywall -->
+    <string name="settings_title">Settings</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="accent_color">Accent Color</string>
+    <string name="reminder_settings">Study Reminders</string>
+    <string name="reminder_time">Reminder Time</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="delete_account">Delete Account &amp; Data</string>
+
+    <string name="upgrade_pro">Upgrade to Pro</string>
+    <string name="free_plan">Free Plan</string>
+    <string name="pro_plan">Pro Plan</string>
+    <string name="pro_feature_1">Unlimited active courses</string>
+    <string name="pro_feature_2">Unlimited outline regenerations</string>
+    <string name="pro_feature_3">Unlimited AI Helper Bot messages</string>
+    <string name="pro_feature_4">Official Certificates of Completion</string>
+    <string name="pro_feature_5">Offline lesson downloads</string>
+
+    <!-- Common -->
+    <string name="cancel">Cancel</string>
+    <string name="retry">Retry</string>
+    <string name="error_generic">An unexpected error occurred. Please try again.</string>
+    <string name="error_no_connection">No internet connection. Previously cached lessons are available offline.</string>
+
+    <!-- Days -->
+    <string name="day_mon">Mon</string>
+    <string name="day_tue">Tue</string>
+    <string name="day_wed">Wed</string>
+    <string name="day_thu">Thu</string>
+    <string name="day_fri">Fri</string>
+    <string name="day_sat">Sat</string>
+    <string name="day_sun">Sun</string>
+
+    <!-- Splash -->
+    <string name="splash_subtitle">AI-powered learning around your deadline &amp; hours</string>
+
+    <!-- Privacy Policy -->
+    <string name="privacy_policy_intro">Introduction</string>
+    <string name="privacy_policy_collect">Information We Collect</string>
+    <string name="privacy_policy_use">How We Use Your Information</string>
+    <string name="privacy_policy_share">Data Sharing</string>
+    <string name="privacy_policy_rights">Your Rights</string>
+    <string name="privacy_policy_security">Security</string>
+    <string name="privacy_policy_children">Children\u0027s Privacy</string>
+    <string name="privacy_policy_contact">Contact Us</string>
+
+    <!-- Flashcards -->
+    <string name="flashcards">Flashcards</string>
+    <string name="certificate_of_completion">Certificate of Completion</string>
+    <string name="flip_card">Flip Card</string>
+
+    <!-- Completion Actions -->
+    <string name="review_with_flashcards">Review with Flashcards</string>
+    <string name="view_certificate">View Certificate</string>
+</resources>
+
