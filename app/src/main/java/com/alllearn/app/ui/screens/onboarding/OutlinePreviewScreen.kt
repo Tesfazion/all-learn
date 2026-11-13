@@ -40,7 +40,7 @@ fun OutlinePreviewScreen(
         try { SkillLevel.entries.first { it.key == levelKey } } catch (e: Exception) { SkillLevel.BEGINNER }
     }
 
-    LaunchedEffect(Unit) {
+    LaunchedEffect(area, topic, levelKey, levelNote, deadlineWeeks, hoursPerWeek) {
         if (outlineState is OutlineState.Idle) {
             viewModel.generateOutline(
                 userId = userId,

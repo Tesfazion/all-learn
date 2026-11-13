@@ -1,4 +1,4 @@
-*.iml
+﻿*.iml
 .gradle
 /local.properties
 /.idea/caches
@@ -11,3 +11,20 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Android build outputs
+app/build/
+build/
+*.apk
+*.aab
+*.aar
+
+# Temp build files
+build_out.txt
+build_stdout.txt
+build_stderr.txt
+hs_err_pid*.log
+replay_pid*.log
+
+# IDE
+.idea/misc.xml

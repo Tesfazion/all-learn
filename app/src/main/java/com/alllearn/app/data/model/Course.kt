@@ -1,5 +1,7 @@
 package com.alllearn.app.data.model
 
+import com.google.gson.annotations.SerializedName
+
 enum class SkillLevel(val key: String) {
     BEGINNER("beginner"),
     INTERMEDIATE("intermediate"),
@@ -14,42 +16,42 @@ enum class CourseStatus {
 }
 
 data class SourceLink(
-    val title: String,
-    val url: String,
-    val type: String = "docs" // docs, book, article, video_reference
+    @SerializedName("title") val title: String,
+    @SerializedName("url") val url: String,
+    @SerializedName("type") val type: String = "docs"
 )
 
 data class LessonItem(
-    val id: String,
-    val weekNumber: Int,
-    val title: String,
-    val minutes: Int,
-    val sources: List<SourceLink> = emptyList(),
-    val status: String = "not_started" // not_started, in_progress, done
+    @SerializedName("id") val id: String,
+    @SerializedName("weekNumber") val weekNumber: Int,
+    @SerializedName("title") val title: String,
+    @SerializedName("minutes") val minutes: Int,
+    @SerializedName("sources") val sources: List<SourceLink> = emptyList(),
+    @SerializedName("status") val status: String = "not_started"
 )
 
 data class WeekPlan(
-    val week: Int,
-    val title: String,
-    val plannedMinutes: Int,
-    val lessons: List<LessonItem>,
-    val hasQuiz: Boolean = true
+    @SerializedName("week") val week: Int,
+    @SerializedName("title") val title: String,
+    @SerializedName("plannedMinutes") val plannedMinutes: Int,
+    @SerializedName("lessons") val lessons: List<LessonItem>,
+    @SerializedName("hasQuiz") val hasQuiz: Boolean = true
 )
 
 data class PhasePlan(
-    val phase: Int,
-    val title: String,
-    val weeks: List<Int>,
-    val goal: String,
-    val milestoneProject: String
+    @SerializedName("phase") val phase: Int,
+    @SerializedName("title") val title: String,
+    @SerializedName("weeks") val weeks: List<Int>,
+    @SerializedName("goal") val goal: String,
+    @SerializedName("milestoneProject") val milestoneProject: String
 )
 
 data class CourseOutline(
-    val title: String,
-    val totalWeeks: Int,
-    val hoursPerWeek: Int,
-    val phases: List<PhasePlan>,
-    val weeks: List<WeekPlan>
+    @SerializedName("title") val title: String,
+    @SerializedName("totalWeeks") val totalWeeks: Int,
+    @SerializedName("hoursPerWeek") val hoursPerWeek: Int,
+    @SerializedName("phases") val phases: List<PhasePlan>,
+    @SerializedName("weeks") val weeks: List<WeekPlan>
 )
 
 data class Course(

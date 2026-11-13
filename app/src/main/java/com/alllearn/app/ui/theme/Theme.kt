@@ -14,47 +14,159 @@ fun AllLearnTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
-    val primaryColor = if (darkTheme) {
-        when (accent) {
-            ThemeAccent.BLUE -> BluePrimaryDark
-            ThemeAccent.EMERALD -> EmeraldPrimaryDark
-            ThemeAccent.PURPLE -> PurplePrimaryDark
-            ThemeAccent.AMBER -> AmberPrimaryDark
-            ThemeAccent.ROSE -> RosePrimaryDark
-        }
-    } else {
-        when (accent) {
-            ThemeAccent.BLUE -> BluePrimary
-            ThemeAccent.EMERALD -> EmeraldPrimary
-            ThemeAccent.PURPLE -> PurplePrimary
-            ThemeAccent.AMBER -> AmberPrimary
-            ThemeAccent.ROSE -> RosePrimary
-        }
-    }
-
     val colorScheme = if (darkTheme) {
-        darkColorScheme(
-            primary = primaryColor,
-            background = DarkBackground,
-            surface = DarkSurface,
-            onSurface = DarkOnSurface,
-            surfaceVariant = Color(0xFF334155),
-            onSurfaceVariant = Color(0xFFCBD5E1)
-        )
+        when (accent) {
+            ThemeAccent.BLUE -> darkColorScheme(
+                primary           = BluePrimaryDark,
+                onPrimary         = Color(0xFF001829),
+                primaryContainer  = BlueContainerDark,
+                onPrimaryContainer= BluePrimaryDark,
+                secondary         = BlueSecondary,
+                background        = DarkBackground,
+                surface           = DarkSurface,
+                onSurface         = DarkOnSurface,
+                surfaceVariant    = DarkSurfaceVariant,
+                onSurfaceVariant  = DarkOnSurfaceVariant,
+                error             = ErrorRed,
+                outline           = Color(0xFF334155),
+                outlineVariant    = Color(0xFF1E293B)
+            )
+            ThemeAccent.EMERALD -> darkColorScheme(
+                primary           = EmeraldPrimaryDark,
+                onPrimary         = Color(0xFF00200E),
+                primaryContainer  = EmeraldContainerDark,
+                onPrimaryContainer= EmeraldPrimaryDark,
+                background        = DarkBackground,
+                surface           = DarkSurface,
+                onSurface         = DarkOnSurface,
+                surfaceVariant    = DarkSurfaceVariant,
+                onSurfaceVariant  = DarkOnSurfaceVariant,
+                error             = ErrorRed,
+                outline           = Color(0xFF334155),
+                outlineVariant    = Color(0xFF1E293B)
+            )
+            ThemeAccent.PURPLE -> darkColorScheme(
+                primary           = PurplePrimaryDark,
+                onPrimary         = Color(0xFF1A0040),
+                primaryContainer  = PurpleContainerDark,
+                onPrimaryContainer= PurplePrimaryDark,
+                background        = DarkBackground,
+                surface           = DarkSurface,
+                onSurface         = DarkOnSurface,
+                surfaceVariant    = DarkSurfaceVariant,
+                onSurfaceVariant  = DarkOnSurfaceVariant,
+                error             = ErrorRed,
+                outline           = Color(0xFF334155),
+                outlineVariant    = Color(0xFF1E293B)
+            )
+            ThemeAccent.AMBER -> darkColorScheme(
+                primary           = AmberPrimaryDark,
+                onPrimary         = Color(0xFF2D1500),
+                primaryContainer  = AmberContainerDark,
+                onPrimaryContainer= AmberPrimaryDark,
+                background        = DarkBackground,
+                surface           = DarkSurface,
+                onSurface         = DarkOnSurface,
+                surfaceVariant    = DarkSurfaceVariant,
+                onSurfaceVariant  = DarkOnSurfaceVariant,
+                error             = ErrorRed,
+                outline           = Color(0xFF334155),
+                outlineVariant    = Color(0xFF1E293B)
+            )
+            ThemeAccent.ROSE -> darkColorScheme(
+                primary           = RosePrimaryDark,
+                onPrimary         = Color(0xFF2D0010),
+                primaryContainer  = RoseContainerDark,
+                onPrimaryContainer= RosePrimaryDark,
+                background        = DarkBackground,
+                surface           = DarkSurface,
+                onSurface         = DarkOnSurface,
+                surfaceVariant    = DarkSurfaceVariant,
+                onSurfaceVariant  = DarkOnSurfaceVariant,
+                error             = ErrorRed,
+                outline           = Color(0xFF334155),
+                outlineVariant    = Color(0xFF1E293B)
+            )
+        }
     } else {
-        lightColorScheme(
-            primary = primaryColor,
-            background = LightBackground,
-            surface = LightSurface,
-            onSurface = LightOnSurface,
-            surfaceVariant = Color(0xFFF1F5F9),
-            onSurfaceVariant = Color(0xFF475569)
-        )
+        when (accent) {
+            ThemeAccent.BLUE -> lightColorScheme(
+                primary           = BluePrimary,
+                onPrimary         = Color.White,
+                primaryContainer  = BlueContainer,
+                onPrimaryContainer= Color(0xFF004466),
+                secondary         = BlueSecondary,
+                background        = LightBackground,
+                surface           = LightSurface,
+                onSurface         = LightOnSurface,
+                surfaceVariant    = LightSurfaceVariant,
+                onSurfaceVariant  = LightOnSurfaceVariant,
+                error             = ErrorRed,
+                outline           = Color(0xFFCBD5E1),
+                outlineVariant    = Color(0xFFE2E8F0)
+            )
+            ThemeAccent.EMERALD -> lightColorScheme(
+                primary           = EmeraldPrimary,
+                onPrimary         = Color.White,
+                primaryContainer  = EmeraldContainer,
+                onPrimaryContainer= Color(0xFF004D2A),
+                background        = LightBackground,
+                surface           = LightSurface,
+                onSurface         = LightOnSurface,
+                surfaceVariant    = LightSurfaceVariant,
+                onSurfaceVariant  = LightOnSurfaceVariant,
+                error             = ErrorRed,
+                outline           = Color(0xFFCBD5E1),
+                outlineVariant    = Color(0xFFE2E8F0)
+            )
+            ThemeAccent.PURPLE -> lightColorScheme(
+                primary           = PurplePrimary,
+                onPrimary         = Color.White,
+                primaryContainer  = PurpleContainer,
+                onPrimaryContainer= Color(0xFF3B0A6B),
+                background        = LightBackground,
+                surface           = LightSurface,
+                onSurface         = LightOnSurface,
+                surfaceVariant    = LightSurfaceVariant,
+                onSurfaceVariant  = LightOnSurfaceVariant,
+                error             = ErrorRed,
+                outline           = Color(0xFFCBD5E1),
+                outlineVariant    = Color(0xFFE2E8F0)
+            )
+            ThemeAccent.AMBER -> lightColorScheme(
+                primary           = AmberPrimary,
+                onPrimary         = Color.White,
+                primaryContainer  = AmberContainer,
+                onPrimaryContainer= Color(0xFF5A2900),
+                background        = LightBackground,
+                surface           = LightSurface,
+                onSurface         = LightOnSurface,
+                surfaceVariant    = LightSurfaceVariant,
+                onSurfaceVariant  = LightOnSurfaceVariant,
+                error             = ErrorRed,
+                outline           = Color(0xFFCBD5E1),
+                outlineVariant    = Color(0xFFE2E8F0)
+            )
+            ThemeAccent.ROSE -> lightColorScheme(
+                primary           = RosePrimary,
+                onPrimary         = Color.White,
+                primaryContainer  = RoseContainer,
+                onPrimaryContainer= Color(0xFF5A001A),
+                background        = LightBackground,
+                surface           = LightSurface,
+                onSurface         = LightOnSurface,
+                surfaceVariant    = LightSurfaceVariant,
+                onSurfaceVariant  = LightOnSurfaceVariant,
+                error             = ErrorRed,
+                outline           = Color(0xFFCBD5E1),
+                outlineVariant    = Color(0xFFE2E8F0)
+            )
+        }
     }
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
-        content = content
+        typography  = Typography,
+        content     = content
     )
 }

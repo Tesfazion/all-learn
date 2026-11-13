@@ -1,16 +1,18 @@
 package com.alllearn.app.data.model
 
+import com.google.gson.annotations.SerializedName
+
 data class QuizOption(
-    val id: String,
-    val text: String
+    @SerializedName("id") val id: String,
+    @SerializedName("text") val text: String
 )
 
 data class QuizQuestion(
-    val id: String,
-    val question: String,
-    val options: List<QuizOption>,
-    val correctOptionId: String,
-    val explanation: String
+    @SerializedName("id") val id: String,
+    @SerializedName("question") val question: String,
+    @SerializedName("options") val options: List<QuizOption>,
+    @SerializedName("correctOptionId") val correctOptionId: String,
+    @SerializedName("explanation") val explanation: String
 )
 
 data class LessonDetail(

@@ -190,5 +190,17 @@
     <!-- Completion Actions -->
     <string name="review_with_flashcards">Review with Flashcards</string>
     <string name="view_certificate">View Certificate</string>
+
+    <!-- New strings for upgraded UI components -->
+    <string name="back_button_desc">Navigate back</string>
+    <string name="ai_helper_bot_desc">Open AI Helper Bot</string>
+    <string name="confirm_answer">Confirm Answer</string>
+    <string name="next_question">Next Question</string>
+    <string name="see_results">See Results</string>
+    <string name="continue_learning">Continue Learning</string>
+    <string name="profile_free_plan">Free Plan</string>
+    <string name="all_cards_done">All cards reviewed!</string>
+    <string name="difficulty_easy">Easy</string>
+    <string name="difficulty_hard">Hard</string>
 </resources>
 

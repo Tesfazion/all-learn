@@ -1,4 +1,4 @@
-package com.alllearn.app
+﻿package com.alllearn.app
 
 import android.app.Application
 import androidx.work.ExistingPeriodicWorkPolicy
@@ -14,6 +14,11 @@ import com.alllearn.app.data.repository.LessonRepository
 import com.alllearn.app.worker.ReminderWorker
 import com.google.firebase.FirebaseApp
 import com.google.firebase.crashlytics.FirebaseCrashlytics
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.launch
 import java.util.concurrent.TimeUnit
 
 class AllLearnApplication : Application() {
@@ -24,7 +29,8 @@ class AllLearnApplication : Application() {
     lateinit var userPreferencesRepository: UserPreferencesRepository
         private set
 
-    lateinit var aiCurriculumEngine: AiCurriculumEngine
+    // Exposed as var — hot-swapped when BYOK key changes
+    var aiCurriculumEngine: AiCurriculumEngine = AiCurriculumEngine()
         private set
 
     lateinit var authRepository: AuthRepository
@@ -43,30 +49,47 @@ class AllLearnApplication : Application() {
         super.onCreate()
         instance = this
 
-        FirebaseApp.initializeApp(this)
-        FirebaseCrashlytics.getInstance().setCrashlyticsCollectionEnabled(true)
+        try {
+            FirebaseApp.initializeApp(this)
+            FirebaseCrashlytics.getInstance().setCrashlyticsCollectionEnabled(true)
+        } catch (e: Throwable) {
+            e.printStackTrace()
+        }
 
         database = AppDatabase.getInstance(this)
         userPreferencesRepository = UserPreferencesRepository(this)
+
+        // Initial engine with app default key
         aiCurriculumEngine = AiCurriculumEngine()
 
-        authRepository = AuthRepository(userPreferencesRepository, database.userDao())
+        authRepository   = AuthRepository(userPreferencesRepository, database.userDao())
         courseRepository = CourseRepository(database.courseDao(), aiCurriculumEngine, userPreferencesRepository)
         lessonRepository = LessonRepository(database.lessonDao(), aiCurriculumEngine)
-        chatRepository = ChatRepository(database.chatDao(), aiCurriculumEngine, userPreferencesRepository)
+        chatRepository   = ChatRepository(database.chatDao(), aiCurriculumEngine, userPreferencesRepository)
+
+        // Observe BYOK settings — hot-swap engine on change
+        CoroutineScope(Dispatchers.IO).launch {
+            userPreferencesRepository.byokEnabledFlow.combine(
+                userPreferencesRepository.byokApiKeyFlow
+            ) { enabled, key -> Pair(enabled, key) }
+            .collect { (enabled, key) ->
+                val effectiveKey = if (enabled && key.isNotBlank()) key
+                                   else AiCurriculumEngine.DEFAULT_KEY
+                aiCurriculumEngine = AiCurriculumEngine(effectiveKey)
+            }
+        }
 
         scheduleDailyReminderWork()
     }
 
     private fun scheduleDailyReminderWork() {
-        val reminderWorkRequest = PeriodicWorkRequestBuilder<ReminderWorker>(24, TimeUnit.HOURS)
+        val reminderWork = PeriodicWorkRequestBuilder<ReminderWorker>(24, TimeUnit.HOURS)
             .setInitialDelay(12, TimeUnit.HOURS)
             .build()
-
         WorkManager.getInstance(this).enqueueUniquePeriodicWork(
             ReminderWorker.WORK_NAME,
             ExistingPeriodicWorkPolicy.KEEP,
-            reminderWorkRequest
+            reminderWork
         )
     }
 

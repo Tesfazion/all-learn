@@ -7,6 +7,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.alllearn.app.R
+import kotlinx.coroutines.launch
 
 @Composable
 fun ForgotPasswordDialog(
@@ -50,11 +51,11 @@ fun ForgotPasswordDialog(
                 onClick = {
                     if (email.isNotBlank()) {
                         isLoading = true
-                        kotlinx.coroutines.GlobalScope.run {
-                            // Run reset in coroutine
+                        coroutineScope.launch {
+                            val msg = onSendReset(email)
+                            resultMsg = msg
+                            isLoading = false
                         }
-                        resultMsg = "If this email has an account, a reset link was sent."
-                        isLoading = false
                     }
                 },
                 enabled = email.isNotBlank() && !isLoading

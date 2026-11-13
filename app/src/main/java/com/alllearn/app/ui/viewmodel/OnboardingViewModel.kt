@@ -70,4 +70,8 @@ class OnboardingViewModel(
             )
         }
     }
+
+    fun resetState() {
+        _outlineState.value = OutlineState.Idle
+    }
 }

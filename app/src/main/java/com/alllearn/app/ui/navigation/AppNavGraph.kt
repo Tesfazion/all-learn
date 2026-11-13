@@ -126,7 +126,10 @@ fun AppNavGraph(
         // Onboarding Flow
         composable(Screen.SelectArea.route) {
             SelectAreaScreen(
-                onAreaSelected = { area -> navController.navigate(Screen.SelectTopic.createRoute(area)) },
+                onAreaSelected = { area ->
+                    onboardingViewModel.resetState()
+                    navController.navigate(Screen.SelectTopic.createRoute(area))
+                },
                 onBackClick = { navController.popBackStack() }
             )
         }
@@ -135,7 +138,7 @@ fun AppNavGraph(
             route = Screen.SelectTopic.route,
             arguments = listOf(navArgument("area") { type = NavType.StringType })
         ) { backStackEntry ->
-            val area = backStackEntry.arguments?.getString("area") ?: ""
+            val area = android.net.Uri.decode(backStackEntry.arguments?.getString("area") ?: "")
             SelectTopicScreen(
                 area = area,
                 onTopicSelected = { topic -> navController.navigate(Screen.SkillLevel.createRoute(area, topic)) },
@@ -150,8 +153,8 @@ fun AppNavGraph(
                 navArgument("topic") { type = NavType.StringType }
             )
         ) { backStackEntry ->
-            val area = backStackEntry.arguments?.getString("area") ?: ""
-            val topic = backStackEntry.arguments?.getString("topic") ?: ""
+            val area = android.net.Uri.decode(backStackEntry.arguments?.getString("area") ?: "")
+            val topic = android.net.Uri.decode(backStackEntry.arguments?.getString("topic") ?: "")
             SkillLevelScreen(
                 area = area,
                 topic = topic,
@@ -171,10 +174,11 @@ fun AppNavGraph(
                 navArgument("levelNote") { type = NavType.StringType }
             )
         ) { backStackEntry ->
-            val area = backStackEntry.arguments?.getString("area") ?: ""
-            val topic = backStackEntry.arguments?.getString("topic") ?: ""
-            val level = backStackEntry.arguments?.getString("level") ?: ""
-            val levelNote = backStackEntry.arguments?.getString("levelNote") ?: ""
+            val area = android.net.Uri.decode(backStackEntry.arguments?.getString("area") ?: "")
+            val topic = android.net.Uri.decode(backStackEntry.arguments?.getString("topic") ?: "")
+            val level = android.net.Uri.decode(backStackEntry.arguments?.getString("level") ?: "")
+            val rawNote = android.net.Uri.decode(backStackEntry.arguments?.getString("levelNote") ?: "")
+            val levelNote = if (rawNote == "none") "" else rawNote
             DeadlineScreen(
                 area = area,
                 topic = topic,
@@ -197,10 +201,11 @@ fun AppNavGraph(
                 navArgument("deadlineWeeks") { type = NavType.IntType }
             )
         ) { backStackEntry ->
-            val area = backStackEntry.arguments?.getString("area") ?: ""
-            val topic = backStackEntry.arguments?.getString("topic") ?: ""
-            val level = backStackEntry.arguments?.getString("level") ?: ""
-            val levelNote = backStackEntry.arguments?.getString("levelNote") ?: ""
+            val area = android.net.Uri.decode(backStackEntry.arguments?.getString("area") ?: "")
+            val topic = android.net.Uri.decode(backStackEntry.arguments?.getString("topic") ?: "")
+            val level = android.net.Uri.decode(backStackEntry.arguments?.getString("level") ?: "")
+            val rawNote = android.net.Uri.decode(backStackEntry.arguments?.getString("levelNote") ?: "")
+            val levelNote = if (rawNote == "none") "" else rawNote
             val weeks = backStackEntry.arguments?.getInt("deadlineWeeks") ?: 12
             WeeklyHoursScreen(
                 area = area,
@@ -226,10 +231,11 @@ fun AppNavGraph(
                 navArgument("hoursPerWeek") { type = NavType.IntType }
             )
         ) { backStackEntry ->
-            val area = backStackEntry.arguments?.getString("area") ?: ""
-            val topic = backStackEntry.arguments?.getString("topic") ?: ""
-            val levelKey = backStackEntry.arguments?.getString("level") ?: ""
-            val levelNote = backStackEntry.arguments?.getString("levelNote") ?: ""
+            val area = android.net.Uri.decode(backStackEntry.arguments?.getString("area") ?: "")
+            val topic = android.net.Uri.decode(backStackEntry.arguments?.getString("topic") ?: "")
+            val levelKey = android.net.Uri.decode(backStackEntry.arguments?.getString("level") ?: "")
+            val rawNote = android.net.Uri.decode(backStackEntry.arguments?.getString("levelNote") ?: "")
+            val levelNote = if (rawNote == "none") "" else rawNote
             val weeks = backStackEntry.arguments?.getInt("deadlineWeeks") ?: 12
             val hours = backStackEntry.arguments?.getInt("hoursPerWeek") ?: 7
             OutlinePreviewScreen(
@@ -254,7 +260,7 @@ fun AppNavGraph(
             route = Screen.WeekView.route,
             arguments = listOf(navArgument("courseId") { type = NavType.StringType })
         ) { backStackEntry ->
-            val courseId = backStackEntry.arguments?.getString("courseId") ?: ""
+            val courseId = android.net.Uri.decode(backStackEntry.arguments?.getString("courseId") ?: "")
             WeekViewScreen(
                 courseId = courseId,
                 viewModel = dashboardViewModel,
@@ -281,8 +287,8 @@ fun AppNavGraph(
                 navArgument("lessonId") { type = NavType.StringType }
             )
         ) { backStackEntry ->
-            val courseId = backStackEntry.arguments?.getString("courseId") ?: ""
-            val lessonId = backStackEntry.arguments?.getString("lessonId") ?: ""
+            val courseId = android.net.Uri.decode(backStackEntry.arguments?.getString("courseId") ?: "")
+            val lessonId = android.net.Uri.decode(backStackEntry.arguments?.getString("lessonId") ?: "")
 
             LessonDetailScreen(
                 courseId = courseId,
@@ -303,8 +309,8 @@ fun AppNavGraph(
                 navArgument("lessonId") { type = NavType.StringType }
             )
         ) { backStackEntry ->
-            val courseId = backStackEntry.arguments?.getString("courseId") ?: ""
-            val lessonId = backStackEntry.arguments?.getString("lessonId") ?: ""
+            val courseId = android.net.Uri.decode(backStackEntry.arguments?.getString("courseId") ?: "")
+            val lessonId = android.net.Uri.decode(backStackEntry.arguments?.getString("lessonId") ?: "")
             QuizScreen(
                 courseId = courseId,
                 lessonId = lessonId,
@@ -321,8 +327,8 @@ fun AppNavGraph(
                 navArgument("lessonId") { type = NavType.StringType }
             )
         ) { backStackEntry ->
-            val courseId = backStackEntry.arguments?.getString("courseId") ?: ""
-            val lessonId = backStackEntry.arguments?.getString("lessonId") ?: ""
+            val courseId = android.net.Uri.decode(backStackEntry.arguments?.getString("courseId") ?: "")
+            val lessonId = android.net.Uri.decode(backStackEntry.arguments?.getString("lessonId") ?: "")
             HelperBotScreen(
                 courseId = courseId,
                 lessonId = lessonId,
@@ -335,7 +341,7 @@ fun AppNavGraph(
             route = Screen.Flashcards.route,
             arguments = listOf(navArgument("courseTitle") { type = NavType.StringType })
         ) { backStackEntry ->
-            val courseTitle = backStackEntry.arguments?.getString("courseTitle") ?: "Course Review"
+            val courseTitle = android.net.Uri.decode(backStackEntry.arguments?.getString("courseTitle") ?: "Course Review")
             FlashcardScreen(
                 courseTitle = courseTitle,
                 onBackClick = { navController.popBackStack() }
@@ -346,7 +352,7 @@ fun AppNavGraph(
             route = Screen.Certificate.route,
             arguments = listOf(navArgument("courseTitle") { type = NavType.StringType })
         ) { backStackEntry ->
-            val courseTitle = backStackEntry.arguments?.getString("courseTitle") ?: "Course Completion"
+            val courseTitle = android.net.Uri.decode(backStackEntry.arguments?.getString("courseTitle") ?: "Course Completion")
             CertificateScreen(
                 courseTitle = courseTitle,
                 onBackClick = { navController.popBackStack() }
@@ -368,6 +374,7 @@ fun AppNavGraph(
         }
 
         composable(Screen.Settings.route) {
+            val userEmail by settingsViewModel.userEmail.collectAsState()
             SettingsScreen(
                 viewModel = settingsViewModel,
                 onNavigateToPaywall = { navController.navigate(Screen.Paywall.route) },
@@ -377,7 +384,8 @@ fun AppNavGraph(
                     }
                 },
                 onNavigate = { route -> navController.navigate(route) },
-                onOpenBot = { navController.navigate(Screen.HelperBot.createRoute("none")) }
+                onOpenBot  = { navController.navigate(Screen.HelperBot.createRoute("none")) },
+                userEmail  = userEmail
             )
         }
 

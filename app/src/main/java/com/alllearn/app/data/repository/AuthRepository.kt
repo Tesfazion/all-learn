@@ -28,7 +28,12 @@ class AuthRepository(
             return Result.failure(IllegalArgumentException(passwordError))
         }
 
-        val userId = UUID.randomUUID().toString()
+        val existingUser = userDao.getUserByEmail(trimmedEmail)
+        if (existingUser != null) {
+            return Result.failure(IllegalArgumentException("An account with this email already exists"))
+        }
+
+        val userId = "user_${trimmedEmail.lowercase().hashCode()}"
         val userProfile = UserProfile(
             id = userId,
             email = trimmedEmail
@@ -60,9 +65,8 @@ class AuthRepository(
             return Result.failure(IllegalArgumentException("Email and password cannot be empty"))
         }
 
-        // For MVP mock auth: allow any valid email + valid 8-char password
-        val userId = "user_${trimmedEmail.hashCode()}"
-        val existing = userDao.getUser(userId)
+        val existing = userDao.getUserByEmail(trimmedEmail)
+        val userId = existing?.id ?: "user_${trimmedEmail.lowercase().hashCode()}"
 
         val userProfile = if (existing != null) {
             UserProfile(
@@ -118,6 +122,11 @@ class AuthRepository(
     }
 
     private fun isValidEmail(email: String): Boolean {
-        return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
+        if (email.isBlank() || !email.contains("@") || !email.contains(".")) return false
+        return try {
+            android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
+        } catch (e: Throwable) {
+            true
+        }
     }
 }
